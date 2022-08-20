@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css'
 import AddFields from './AddFields';
-import { Button, Divider, notification, Space } from "antd";
+import { Button } from "antd";
 import "antd/dist/antd.css";
 import {
 
@@ -48,7 +48,6 @@ class TravelPortal extends React.Component {
           if (element.key === inputUser.key) return inputUser;
           return element;
         });
-        // console.log(newUsers);
         return { coApplicantList: newUsers };
       });
     };
@@ -58,7 +57,6 @@ class TravelPortal extends React.Component {
           if (element.key === inputUser.key) return inputUser;
           return element;
         });
-        // console.log(newUsers);
         return { applicantList: newUsers };
       });
     };
@@ -78,10 +76,7 @@ class TravelPortal extends React.Component {
           })
         }));
       }
-      
-     
     };
-  
     removeElement = (id) => {
       this.setState((prevState) => ({
         coApplicantList: prevState.coApplicantList.filter((user) => user.key !== id)
