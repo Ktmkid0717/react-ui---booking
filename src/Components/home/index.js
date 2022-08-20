@@ -71,8 +71,8 @@ class TravelPortal extends React.Component {
             name: "",
             surname: "",
             dob: "",
-            gender: { value: "select", label: "select gender" },
-            relationship: { value: "select", label: "select relationship" }
+            gender: { value: "select", label: "Gender" },
+            relationship: { value: "select", label: "Relationship" }
           })
         }));
       }

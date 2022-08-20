@@ -2,6 +2,9 @@ import { Component } from "react";
 import Select from "react-select";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import {
+  CalendarOutlined,
+} from "@ant-design/icons";
 
 let dropdownStyle ={
     menu: provided => ({
@@ -36,6 +39,7 @@ let dropdownStyle ={
         boxShadow: 'unset !important',
         borderColor:'unset !important',
         display:'flex',
+        cursor: 'pointer'
       }
     },
     container: provided => ({
@@ -116,6 +120,7 @@ class AddFields extends Component {
        selected ={user.dob}
        onChange={ (e)=>this.handleChange(e,'dob')}
        />
+       <CalendarOutlined/>
       </div>
       <div className={this.props?.isValid&&user.gender?.value==="select"?'applicant-fields-4 error':'applicant-fields-4'}>
       <Select
