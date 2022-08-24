@@ -74,6 +74,9 @@
     border: 1px solid;
     border-radius: 10px;
 }
+.selected{
+    background: #eeeeee;
+}
 .content-wrapper-body{
     background: #ffff;
     height: 500px;

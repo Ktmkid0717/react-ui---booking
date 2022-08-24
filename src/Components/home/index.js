@@ -105,7 +105,7 @@ class TravelPortal extends React.Component {
             <div className='header-types'>Visa Type</div>
             <div className='header-types'>Depart</div>
             <div className='header-types'>Return</div>
-            <div className='header-types'>Travellers</div>
+            <div className='header-types selected'>Travellers  {applicantList.concat(coApplicantList).length}</div>
         </div>
         <div className='content-wrapper-body'>
             <div className='body-head'>
